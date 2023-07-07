@@ -25,9 +25,9 @@ def main_menu():
 
 
   if a == "1":
-   with open("hamle.txt", "w") as f:
+   with open("movement.txt", "w") as f:
         f.write("")
-   with open("tahta.txt", "w") as f2:
+   with open("gameboard.txt", "w") as f2:
         f2.write("")
    
   
@@ -101,17 +101,17 @@ def main_menu():
 
     player = 3 - player
 
-    with open("hamle.txt", "w") as f:
+    with open("movement.txt", "w") as f:
      f.write(moves)
 
-    with open("tahta.txt", "w") as f2:
+    with open("gameboard.txt", "w") as f2:
      f2.write(board_str)
     
 
   elif a == "2":
-   with open("hamle.txt", "w") as f:
+   with open("movement.txt", "w") as f:
     f.write("")
-   with open("tahta.txt", "w") as f2:
+   with open("gameboard.txt", "w") as f2:
     f2.write("")
    exit()
 
