@@ -30,8 +30,6 @@ def main_menu():
    with open("tahta.txt", "w") as f2:
         f2.write("")
    
-   #Symbols and letters for 2 player
-   #player_symbols = {1: "★", 2: "☆"}  and row_str = "  | ".join([player_sembols[symbol] if symbol != 0 else " " for symbol in row])
   
    player_letters = {1: "X", 2: "W"}
    
@@ -74,7 +72,7 @@ def main_menu():
 
     board_str = ""
     for row in reversed(board):
-     #satıra elemen eklerken sembol varsa sembol yoksa boşluk karakteri kullanılır
+     
      row_str = "  | ".join([player_letters[symbol] if symbol != 0 else " " for symbol in row])
      board_str += row_str + "\n"
      print(row_str)
